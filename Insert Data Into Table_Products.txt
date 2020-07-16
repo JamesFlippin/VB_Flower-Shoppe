@@ -1,0 +1,23 @@
+use inew2332su20;
+go
+-- Insert into the table
+insert into jflippin.fsProducts
+(
+	Description,
+	QuantityOnHand,
+	Price,
+	Cost,
+	Seasonal,
+	SeasonNumber,
+	Photo
+)
+values
+(
+	'Daisey',
+	12,
+	.50,
+	.25,
+	1,
+	234,
+	NULL
+);

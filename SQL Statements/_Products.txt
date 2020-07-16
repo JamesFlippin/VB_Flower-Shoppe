@@ -1,0 +1,55 @@
+use inew2332su20;
+go
+
+-- Create the table
+create table jflippin.fsProducts
+(
+	PID int	IDENTITY(1,1) NOT NULL,
+	Description varchar(25) NOT NULL,
+	QuantityOnHand tinyint NOT NULL,
+	Price money,
+	Cost money,
+	Seasonal tinyint,
+	SeasonNumber tinyint,
+	Photo image
+);
+go
+
+-- Alter Column Type
+alter table jflippin.fsProducts
+alter column Photo varbinary(MAX);
+
+
+-- Insert into the table
+insert into jflippin.fsProducts
+(
+	Description,
+	QuantityOnHand,
+	Price,
+	Cost,
+	Seasonal,
+	SeasonNumber,
+	Photo
+)
+values
+(
+	'Daisey',
+	12,
+	.50,
+	.25,
+	1,
+	234,
+	NULL
+);
+
+;
+go
+
+-- Insert image
+update jflippin.fsProducts
+set Photo= 
+	(select Photo from Openrowset(Bulk N'Z:\Temp\Rose.png', Single_Blob) as image) 
+where pid=1;
+
+
+ALTER TABLE jflippin.fsProducts ADD PhotPath VARCHAR(250) NULL;
