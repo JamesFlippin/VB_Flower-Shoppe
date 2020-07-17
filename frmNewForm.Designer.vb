@@ -44,7 +44,7 @@ Partial Class frmNewForm
         Me.ClientSize = New System.Drawing.Size(348, 361)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "frmNewForm"
-        Me.Text = "Flower"
+        Me.Text = "Me"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
