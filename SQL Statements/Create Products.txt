@@ -1,0 +1,23 @@
+USE [inew2332su20]
+GO
+
+/****** Object:  Table [jflippin].[fsProducts]    Script Date: 7/17/2020 2:29:59 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [jflippin].[fsProducts](
+	[PID] [int] IDENTITY(1,1) NOT NULL,
+	[Description] [varchar](25) NOT NULL,
+	[QuantityOnHand] [tinyint] NOT NULL,
+	[Price] [money] NULL,
+	[Cost] [money] NULL,
+	[Seasonal] [tinyint] NULL,
+	[SeasonNumber] [tinyint] NULL,
+	[Photo] [varbinary](max) NULL,
+	[PhotPath] [varchar](250) NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+

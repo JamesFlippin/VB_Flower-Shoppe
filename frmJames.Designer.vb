@@ -55,7 +55,7 @@ Partial Class frmJames
         Me.ClientSize = New System.Drawing.Size(324, 338)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frmJames"
         Me.Text = "James"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
