@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class frmDavid
+Partial Class frmJames
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -30,10 +30,9 @@ Partial Class frmDavid
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.VB_TSTC_Flower_Shoppe.My.Resources.Resources.flower
-        Me.PictureBox1.Location = New System.Drawing.Point(55, 89)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(6)
+        Me.PictureBox1.Location = New System.Drawing.Point(30, 48)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(484, 434)
+        Me.PictureBox1.Size = New System.Drawing.Size(264, 235)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -41,22 +40,24 @@ Partial Class frmDavid
         'lblTitle
         '
         Me.lblTitle.AutoSize = True
-        Me.lblTitle.Location = New System.Drawing.Point(82, 34)
+        Me.lblTitle.Location = New System.Drawing.Point(45, 18)
+        Me.lblTitle.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(164, 24)
+        Me.lblTitle.Size = New System.Drawing.Size(95, 13)
         Me.lblTitle.TabIndex = 1
         Me.lblTitle.Text = "A pretty little flower"
         '
-        'frmDavid
+        'frmJames
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 24.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(594, 624)
+        Me.ClientSize = New System.Drawing.Size(324, 338)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Name = "frmNewForm"
-        Me.Text = "Flower"
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Name = "frmJames"
+        Me.Text = "James"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
