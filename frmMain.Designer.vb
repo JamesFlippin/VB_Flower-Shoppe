@@ -55,12 +55,13 @@ Partial Class frmMain
         Me.mnuMgrViewMessage = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuMgrSpecials = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuMgrSpe2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.mnuMgrModifyEmployees = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuHelp = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuAbout = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuHelpSep1 = New System.Windows.Forms.ToolStripSeparator()
         Me.mnuVersion = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuExit = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mnuMgrModifyEmployees = New System.Windows.Forms.ToolStripMenuItem()
+        Me.btnNewForm = New System.Windows.Forms.Button()
         Me.mnuMain.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -83,24 +84,24 @@ Partial Class frmMain
         'mnuOrdPlaceOrder
         '
         Me.mnuOrdPlaceOrder.Name = "mnuOrdPlaceOrder"
-        Me.mnuOrdPlaceOrder.Size = New System.Drawing.Size(180, 22)
+        Me.mnuOrdPlaceOrder.Size = New System.Drawing.Size(143, 22)
         Me.mnuOrdPlaceOrder.Text = "Place Order"
         '
         'mnuOrdOrderLookUp
         '
         Me.mnuOrdOrderLookUp.Name = "mnuOrdOrderLookUp"
-        Me.mnuOrdOrderLookUp.Size = New System.Drawing.Size(180, 22)
+        Me.mnuOrdOrderLookUp.Size = New System.Drawing.Size(143, 22)
         Me.mnuOrdOrderLookUp.Text = "Look up"
         '
         'mnuOrdSep1
         '
         Me.mnuOrdSep1.Name = "mnuOrdSep1"
-        Me.mnuOrdSep1.Size = New System.Drawing.Size(177, 6)
+        Me.mnuOrdSep1.Size = New System.Drawing.Size(140, 6)
         '
         'mnuOrdCancelOrder
         '
         Me.mnuOrdCancelOrder.Name = "mnuOrdCancelOrder"
-        Me.mnuOrdCancelOrder.Size = New System.Drawing.Size(180, 22)
+        Me.mnuOrdCancelOrder.Size = New System.Drawing.Size(143, 22)
         Me.mnuOrdCancelOrder.Text = "Cancel Order"
         '
         'mnuInventory
@@ -175,41 +176,41 @@ Partial Class frmMain
         '
         Me.mnuExmployees.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuEmpViewSchedule, Me.mnuEmpSwapDays, Me.mnuEmpSep1, Me.mnuEmpSendMessage, Me.mnuEmpSep2, Me.mnuEmpViewSpecials})
         Me.mnuExmployees.Name = "mnuExmployees"
-        Me.mnuExmployees.Size = New System.Drawing.Size(82, 20)
+        Me.mnuExmployees.Size = New System.Drawing.Size(81, 20)
         Me.mnuExmployees.Text = "Exmployees"
         '
         'mnuEmpViewSchedule
         '
         Me.mnuEmpViewSchedule.Name = "mnuEmpViewSchedule"
-        Me.mnuEmpViewSchedule.Size = New System.Drawing.Size(180, 22)
+        Me.mnuEmpViewSchedule.Size = New System.Drawing.Size(150, 22)
         Me.mnuEmpViewSchedule.Text = "View Schedule"
         '
         'mnuEmpSwapDays
         '
         Me.mnuEmpSwapDays.Name = "mnuEmpSwapDays"
-        Me.mnuEmpSwapDays.Size = New System.Drawing.Size(180, 22)
+        Me.mnuEmpSwapDays.Size = New System.Drawing.Size(150, 22)
         Me.mnuEmpSwapDays.Text = "Swap Days"
         '
         'mnuEmpSep1
         '
         Me.mnuEmpSep1.Name = "mnuEmpSep1"
-        Me.mnuEmpSep1.Size = New System.Drawing.Size(177, 6)
+        Me.mnuEmpSep1.Size = New System.Drawing.Size(147, 6)
         '
         'mnuEmpSendMessage
         '
         Me.mnuEmpSendMessage.Name = "mnuEmpSendMessage"
-        Me.mnuEmpSendMessage.Size = New System.Drawing.Size(180, 22)
+        Me.mnuEmpSendMessage.Size = New System.Drawing.Size(150, 22)
         Me.mnuEmpSendMessage.Text = "Send Message"
         '
         'mnuEmpSep2
         '
         Me.mnuEmpSep2.Name = "mnuEmpSep2"
-        Me.mnuEmpSep2.Size = New System.Drawing.Size(177, 6)
+        Me.mnuEmpSep2.Size = New System.Drawing.Size(147, 6)
         '
         'mnuEmpViewSpecials
         '
         Me.mnuEmpViewSpecials.Name = "mnuEmpViewSpecials"
-        Me.mnuEmpViewSpecials.Size = New System.Drawing.Size(180, 22)
+        Me.mnuEmpViewSpecials.Size = New System.Drawing.Size(150, 22)
         Me.mnuEmpViewSpecials.Text = "View Specials"
         '
         'mnuManager
@@ -259,6 +260,12 @@ Partial Class frmMain
         Me.mnuMgrSpe2.Name = "mnuMgrSpe2"
         Me.mnuMgrSpe2.Size = New System.Drawing.Size(226, 6)
         '
+        'mnuMgrModifyEmployees
+        '
+        Me.mnuMgrModifyEmployees.Name = "mnuMgrModifyEmployees"
+        Me.mnuMgrModifyEmployees.Size = New System.Drawing.Size(229, 22)
+        Me.mnuMgrModifyEmployees.Text = "Add/Edit/Remove Employees"
+        '
         'mnuHelp
         '
         Me.mnuHelp.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuAbout, Me.mnuHelpSep1, Me.mnuVersion})
@@ -286,14 +293,18 @@ Partial Class frmMain
         'mnuExit
         '
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(38, 20)
+        Me.mnuExit.Size = New System.Drawing.Size(37, 20)
         Me.mnuExit.Text = "Exit"
         '
-        'mnuMgrModifyEmployees
+        'btnNewForm
         '
-        Me.mnuMgrModifyEmployees.Name = "mnuMgrModifyEmployees"
-        Me.mnuMgrModifyEmployees.Size = New System.Drawing.Size(229, 22)
-        Me.mnuMgrModifyEmployees.Text = "Add/Edit/Remove Employees"
+        Me.btnNewForm.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNewForm.Location = New System.Drawing.Point(449, 114)
+        Me.btnNewForm.Name = "btnNewForm"
+        Me.btnNewForm.Size = New System.Drawing.Size(136, 58)
+        Me.btnNewForm.TabIndex = 1
+        Me.btnNewForm.Text = "New Form"
+        Me.btnNewForm.UseVisualStyleBackColor = True
         '
         'frmMain
         '
@@ -302,6 +313,7 @@ Partial Class frmMain
         Me.BackgroundImage = Global.VB_TSTC_Flower_Shoppe.My.Resources.Resources.TSTC_Flower_Shoppe
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(631, 496)
+        Me.Controls.Add(Me.btnNewForm)
         Me.Controls.Add(Me.mnuMain)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -357,4 +369,5 @@ Partial Class frmMain
     Friend WithEvents mnuEmpSep1 As ToolStripSeparator
     Friend WithEvents mnuEmpSep2 As ToolStripSeparator
     Friend WithEvents mnuMgrModifyEmployees As ToolStripMenuItem
+    Friend WithEvents btnNewForm As Button
 End Class
