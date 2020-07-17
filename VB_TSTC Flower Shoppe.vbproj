@@ -153,5 +153,11 @@
   <ItemGroup>
     <None Include="Images\Shoppe.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Money.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
