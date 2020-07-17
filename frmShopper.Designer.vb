@@ -24,6 +24,7 @@ Partial Class frmShopper
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmShopper))
         Me.btnExit = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnExit
@@ -35,11 +36,21 @@ Partial Class frmShopper
         Me.btnExit.Text = "E&xit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(121, 108)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(55, 19)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Label1"
+        '
         'frmShopper
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(610, 331)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnExit)
         Me.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -49,10 +60,12 @@ Partial Class frmShopper
         Me.Name = "frmShopper"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Tag = "2020.01"
-        Me.Text = "{Your project specific title goes here}"
+        Me.Text = "TSTC Flower Shoppe"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents btnExit As Button
+    Friend WithEvents Label1 As Label
 End Class
