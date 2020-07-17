@@ -83,10 +83,10 @@
       <DependentUpon>frmMain.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmNewForm.Designer.vb">
-      <DependentUpon>frmNewForm.vb</DependentUpon>
+    <Compile Include="frmDavid.Designer.vb">
+      <DependentUpon>frmDavid.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmNewForm.vb">
+    <Compile Include="frmDavid.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmShopper.Designer.vb">
@@ -116,8 +116,8 @@
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmNewForm.resx">
-      <DependentUpon>frmNewForm.vb</DependentUpon>
+    <EmbeddedResource Include="frmDavid.resx">
+      <DependentUpon>frmDavid.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmShopper.resx">
       <DependentUpon>frmShopper.vb</DependentUpon>

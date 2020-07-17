@@ -44,8 +44,8 @@ Public Class frmMain
     End Sub
 
     Private Sub btnNewForm_Click(sender As Object, e As EventArgs) Handles btnNewForm.Click
-        Dim newForm As frmNewForm
-        newForm = New frmNewForm
+        Dim newForm As frmDavid
+        newForm = New frmDavid
         newForm.ShowDialog()
 
     End Sub
